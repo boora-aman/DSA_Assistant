@@ -102,6 +102,7 @@ npm run dev
 
 ## 🧠 Architecture
 
+```
 DSA_Assistant/
 └── DSA_Assistant
     ├── .env.local
@@ -152,7 +153,7 @@ DSA_Assistant/
     ├── tailwind.config.js
     ├── tsconfig.json
     └── vercel.json
-
+```
 
 ### Key Components
 
