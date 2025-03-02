@@ -1,6 +1,6 @@
 # DSA Learning Assistant 🤖
 
-[![Next.js](https://img.shields.io/badge/Next.js-13.5+-black?style=flat&logo=next.js)](https://nextjs.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-15.2+-black?style=flat&logo=next.js)](https://nextjs.org/)
 [![Gemini API](https://img.shields.io/badge/Gemini_API-2.0-blue?style=flat&logo=google)](https://ai.google.dev/)
 
 A smart chat-based teaching assistant for Data Structures & Algorithms problems, powered by Google's Gemini API and Next.js.
