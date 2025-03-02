@@ -102,32 +102,57 @@ npm run dev
 
 ## 🧠 Architecture
 
-your-project/
-├── .next/                  # Next.js build output (auto-generated)
-├── app/
-│   ├── api/                # API routes
-│   │   └── chat/           # Chat API endpoint
-│   │       └── route.ts
-│   ├── chat/               # Chat page
-│   │   └── page.tsx
-│   ├── layout.tsx          # Root layout
-│   ├── globals.css         # Global CSS
-│   └── page.tsx            # Home page
-├── components/             # Reusable components
-│   └── ChatMessage.tsx     # Chat message component
-├── hooks/                  # Custom hooks
-│   └── useChat.ts          # Chat logic hook
-├── lib/                    # Utility functions
-│   └── api.ts              # API client
-├── public/                 # Static assets
-│   └── images/             # Image assets
-├── styles/                 # CSS modules
-│   └── Home.module.css
-├── .env.local              # Environment variables
-├── next.config.mjs         # Next.js config
-├── tailwind.config.js      # Tailwind config
-├── tsconfig.json           # TypeScript config
-└── package.json            # Dependencies
+DSA_Assistant/
+└── DSA_Assistant
+    ├── .env.local
+    ├── .env.local.example
+    ├── app
+    │   ├── api
+    │   │   └── chat
+    │   │       └── route.ts
+    │   ├── chat
+    │   │   ├── loading.tsx
+    │   │   └── page.tsx
+    │   ├── globals.css
+    │   ├── layout.tsx
+    │   └── page.tsx
+    ├── components
+    │   ├── chat-message.tsx
+    │   ├── demo-section.tsx
+    │   ├── feature-section.tsx
+    │   ├── header.tsx
+    │   ├── hero-section.tsx
+    │   ├── theme-provider.tsx
+    │   └── ui
+    │      _______
+    ├── components.json
+    ├── hooks
+    │   ├── use-mobile.tsx
+    │   └── use-toast.ts
+    ├── image
+    │   └── readme
+    │       ├── 1740931420127.png
+    │       ├── 1740931539944.png
+    │       └── 1740936258324.png
+    ├── lib
+    │   ├── use-chat.ts
+    │   └── utils.ts
+    ├── next-env.d.ts
+    ├── next.config.mjs
+    ├── package.json
+    ├── postcss.config.mjs
+    ├── public
+    │   ├── placeholder-logo.png
+    │   ├── placeholder-logo.svg
+    │   ├── placeholder-user.jpg
+    │   ├── placeholder.jpg
+    │   └── placeholder.svg
+    ├── readme.md
+    ├── styles
+    │   └── globals.css
+    ├── tailwind.config.js
+    ├── tsconfig.json
+    └── versel.json
 
 ### Key Components
 
