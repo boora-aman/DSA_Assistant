@@ -105,54 +105,55 @@ npm run dev
 ```
 DSA_Assistant/
 └── DSA_Assistant
-    ├── .env.local
-    ├── .env.local.example
-    ├── app
-    │   ├── api
+    ├── .env.local                 # Local environment variables (not committed to Git)
+    ├── .env.local.example         # Example environment variables for reference
+    ├── app                        # Main application directory
+    │   ├── api                    # API routes
     │   │   └── chat
-    │   │       └── route.ts
-    │   ├── chat
-    │   │   ├── loading.tsx
-    │   │   └── page.tsx
-    │   ├── globals.css
-    │   ├── layout.tsx
-    │   └── page.tsx
-    ├── components
-    │   ├── chat-message.tsx
-    │   ├── demo-section.tsx
-    │   ├── feature-section.tsx
-    │   ├── header.tsx
-    │   ├── hero-section.tsx
-    │   ├── theme-provider.tsx
-    │   └── ui
-    ├── components.json
-    ├── hooks
-    │   ├── use-mobile.tsx
-    │   └── use-toast.ts
-    ├── image
-    │   └── readme
-    │       ├── 1740931420127.png
-    │       ├── 1740931539944.png
-    │       └── 1740936258324.png
-    ├── lib
-    │   ├── use-chat.ts
-    │   └── utils.ts
-    ├── next-env.d.ts
-    ├── next.config.mjs
-    ├── package.json
-    ├── postcss.config.mjs
-    ├── public
-    │   ├── placeholder-logo.png
-    │   ├── placeholder-logo.svg
-    │   ├── placeholder-user.jpg
-    │   ├── placeholder.jpg
-    │   └── placeholder.svg
-    ├── readme.md
-    ├── styles
-    │   └── globals.css
-    ├── tailwind.config.js
-    ├── tsconfig.json
-    └── vercel.json
+    │   │       └── route.ts       # Backend logic for chat API
+    │   ├── chat                   # Chat-related frontend components
+    │   │   ├── loading.tsx        # Loading screen for chat
+    │   │   └── page.tsx           # Main chat page component
+    │   ├── globals.css            # Global styles
+    │   ├── layout.tsx             # Main layout for the app
+    │   └── page.tsx               # Main page component
+    ├── components                 # Reusable UI components
+    │   ├── chat-message.tsx       # Chat message component
+    │   ├── demo-section.tsx       # Demo section component
+    │   ├── feature-section.tsx    # Features section component
+    │   ├── header.tsx             # Header component
+    │   ├── hero-section.tsx       # Hero section (landing page)
+    │   ├── theme-provider.tsx     # Manages theme (dark/light mode)
+    │   └── ui                     # Additional UI components
+    ├── components.json            # Configuration for components (if any)
+    ├── hooks                      # Custom React hooks
+    │   ├── use-mobile.tsx         # Hook to check for mobile devices
+    │   └── use-toast.ts           # Hook for showing toast notifications
+    ├── image                      # Image assets
+    │   └── readme                 # Images for documentation/readme
+    │       ├── 1740931420127.png  
+    │       ├── 1740931539944.png  
+    │       └── 1740936258324.png  
+    ├── lib                        # Utility functions and libraries
+    │   ├── use-chat.ts            # Custom hook for chat functionality
+    │   └── utils.ts               # Utility functions
+    ├── next-env.d.ts              # TypeScript environment definitions for Next.js
+    ├── next.config.mjs            # Next.js configuration file
+    ├── package.json               # Dependencies and scripts for the project
+    ├── postcss.config.mjs         # PostCSS configuration (used for Tailwind)
+    ├── public                     # Public assets (accessible via URL)
+    │   ├── placeholder-logo.png   
+    │   ├── placeholder-logo.svg   
+    │   ├── placeholder-user.jpg   
+    │   ├── placeholder.jpg        
+    │   └── placeholder.svg        
+    ├── readme.md                  # Project documentation
+    ├── styles                     # Styling-related files
+    │   └── globals.css            # Global CSS styles
+    ├── tailwind.config.js         # Tailwind CSS configuration
+    ├── tsconfig.json              # TypeScript configuration
+    └── vercel.json                # Vercel deployment configuration
+
 ```
 
 ### Key Components
