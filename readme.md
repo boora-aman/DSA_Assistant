@@ -124,7 +124,6 @@ DSA_Assistant/
     │   ├── hero-section.tsx
     │   ├── theme-provider.tsx
     │   └── ui
-    │      _______
     ├── components.json
     ├── hooks
     │   ├── use-mobile.tsx
@@ -152,7 +151,8 @@ DSA_Assistant/
     │   └── globals.css
     ├── tailwind.config.js
     ├── tsconfig.json
-    └── versel.json
+    └── vercel.json
+
 
 ### Key Components
 
