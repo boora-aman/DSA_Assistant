@@ -11,6 +11,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { useToast } from "@/components/ui/use-toast"
 import { ChatMessage } from "@/components/chat-message"
 import { useChat } from "@/lib/use-chat"
+const MAX_MESSAGES = 100;
 
 export default function ChatPage() {
   const router = useRouter()
@@ -20,7 +21,7 @@ export default function ChatPage() {
   const [isUrlValid, setIsUrlValid] = useState(true)
   const messagesEndRef = useRef<HTMLDivElement>(null)
 
-  const { messages, input, setInput, handleSubmit, isLoading, error, reset } = useChat({
+  const {  messages: allMessages, input, setInput, handleSubmit, isLoading, error, reset } = useChat({
     api: "/api/chat",
     initialMessages: [
       {
@@ -56,6 +57,7 @@ export default function ChatPage() {
       }
     },
   })
+  const messages = allMessages.slice(-MAX_MESSAGES);
 
   useEffect(() => {
     if (messages.length > 0) {
@@ -87,6 +89,8 @@ export default function ChatPage() {
     setLeetCodeUrl("")
     setIsUrlValid(true)
   }
+
+
 
   return (
     <div className="container py-6 md:py-10 max-w-5xl h-screen overflow-hidden">
